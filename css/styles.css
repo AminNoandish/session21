@@ -1,0 +1,235 @@
+/* Variables */
+:root{
+    --primary-color: #ec5561;
+}
+/* fonts */
+@font-face{
+    font-family: yekan;
+    src: url('../fonts/Yekan.ttf') format('truetype');
+}
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* Global */
+body{
+    font-family: yekan, 'Open Sans';
+    direction: rtl;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+/* Header */
+header{
+    background-color: #f1f1f1;
+    border-bottom: 1px solid var(--primary-color);
+    padding: 15px 0px;
+}
+.header-flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+header ul li {
+    display: inline;
+    line-height: 2.5;
+}
+header li a{
+    /* display: inline-block; */
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    margin-top: 35px;
+    padding-top: 30px;
+    text-align: center;
+}
+header nav li.current , header nav a:hover{
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+header #branding span{
+    color: var(--primary-color);
+}
+/* Showcase */
+section#show-case{
+    background: url('../images/showcase.jpg') no-repeat center center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#show-case .show-case-content{
+    background-color: #333;
+    color: #fff;
+    border-radius: 80px;
+    padding: 40px;
+    opacity: .9;
+    text-align: center;
+}
+.show-case-content h2{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.show-case-content h2 span{
+    color: var(--primary-color);
+}
+.show-case-content p{
+    color: #ccc;
+    font-size: 25px;
+}
+/* Features */
+#features{
+    padding: 15px;
+}
+.features-grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#features div{
+    text-align: center;
+}
+#features h2{
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+#features div h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+#features div p{
+    margin-bottom: 40px;
+}
+#features div .fa{
+    font-size: 60px;
+    color: var(--primary-color);
+}
+/* Core Features */
+#Core-Features{
+    background-image: url(../images/info-bg.jpg);
+    text-align: center;
+    color: #f1f1f1;
+}
+.core-features-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.core-features-grid p{
+    display: inline-block;
+    font-size: 20px;
+}
+.core-features-grid i{
+    font-size: 20px;
+}
+.core-features-grid .one{
+    font-size: 30px;
+}
+.Core-Features-matn{
+    padding-top: 50px;
+}
+/* ertebat */
+#ertebat{
+    background-color: #555;
+    color: #f1f1f1;
+}
+.ertebat-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    padding: 20px 0px 20px 0px;
+}
+.ertebat-grid h1{
+    padding-bottom: 15px;
+}
+.ertebat-grid h2{
+    display: inline-block;
+    font-size: 20px;
+}
+#email,button{
+    font-size: 15px;
+    padding: 5px;
+}
+.ertebat-grid button{
+    background-color: rgb(0, 0, 0);
+    color: #f1f1f1;
+}
+.form{
+    padding-top: 20px;
+}
+footer{
+    background-color: rgb(18, 71, 73);
+    color: #f1f1f1;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+/* about-me     */
+#about-me h2,p{
+    text-align: center;
+    padding: 20px;
+}
+span{
+    color: var(--primary-color);
+}
+.khat{
+    border-bottom: 1px solid #333;
+    margin: 10px;
+}
+/* servises   */
+#service h2{
+    text-align: center;
+}
+#service .service{
+    text-align: center;
+    color: #f1f1f1;
+    margin: 0px 20px 20px 20px;
+}
+#service .service-one{
+    padding-top: 35px;
+    background-color: #333;
+}
+#service .service-two{
+    padding-top: 35px;
+    background-color:rgb(18, 71, 73);
+}
+#service .service-three{
+    padding-top: 35px;
+    background-color: #333;
+}
+/* tamas-ba-ma */
+.tamas-ba-ma{
+    background-color: #333;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 12px 0px 35px 0px;
+    padding: 20px;
+}
+.tamas-ba-ma form input[type="text"]{
+    width: 50%;
+    height: 40PX;
+}
+.tamas-ba-ma form input[type="email"]{
+    width: 50%;
+    height: 40PX;
+}
+.tamas-ba-ma button{
+    background-color:#111;
+    color: #f1f1f1;
+    padding: 10px 222px 10px 222px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#tamas-ba-ma h2,h3{
+    text-align: center;
+    margin-top: 19px;
+}
+.tamas-ba-ma div{
+    margin-top: 10px;
+}
